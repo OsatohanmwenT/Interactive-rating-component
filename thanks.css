@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:wght@500;700&family=Overpass:wght@400;700&display=swap');
+:root{
+    --Orange:hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsla(216, 12%, 54%, 0.247);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    width: 1134px;
+    background-color: var(--Very-Dark-Blue);
+    font-family: "overpass",sans-serif;
+}
+.wrapper{
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: var(--Dark-Blue);
+    padding: 15px 10px;
+    border-radius: 30px;
+    text-align: center;
+}
+.container .star{
+    display: flex;
+    background-color: var(--Medium-Grey);
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 100%;
+}
+.container .info h2{
+    color: var(--White);
+    font-size: 28px;
+    margin-top: 30px;
+}
+.container .info p{
+    color: var(--Light-Grey);
+    font-size: 16px;
+    width: 350px;
+}
+.container .info .rating{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.container .info .rating .rating-num{
+    display: flex;
+    background-color: var(--Medium-Grey);
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 10px;
+    border-radius: 100%;
+}
+.container .submit-btn{
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    background-color: var(--Orange);
+    padding: 10px 32px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+}
+.container .head .icon{
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+.container .selected{
+    color: var(--Orange);
+    background-color: var(--Medium-Grey);
+    padding: 6px 8px;
+    width: 200px;
+    margin-left: 70px;
+    border-radius: 50px;
+}
